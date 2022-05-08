@@ -1,0 +1,32 @@
+.home__banner-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.carousel__item {
+  border-radius: .25rem;
+  overflow: hidden;
+}
+
+.carousel .slick-dots {
+  bottom: -25px;
+}
+
+.carousel .slick-prev:before,.carousel .slick-next:before {
+  color: #666;
+}
+
+.carousel .slick-prev,
+.carousel .slick-next {
+  color: #fff;
+  z-index: 1;
+}
+
+.carousel .slick-prev {
+  left: -10px;
+}
+
+.carousel .slick-next {
+  right: -10px;
+}

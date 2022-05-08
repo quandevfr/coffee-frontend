@@ -4,6 +4,9 @@ import { Fragment } from 'react';
 import { publicRoutes } from './routers';
 import DefaultLayout from './layouts/defaultLayout';
 
+import '/node_modules/slick-carousel/slick/slick.css';
+import '/node_modules/slick-carousel/slick/slick-theme.css';
+
 function App() {
   return (
     <Router>
