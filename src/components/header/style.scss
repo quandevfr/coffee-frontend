@@ -1,0 +1,82 @@
+@import 'src/components/globalStyles/style.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $body-color;
+  width: 100%;
+  z-index: $z-fixed;
+  transition: all .4s ease;
+}
+
+.nav {
+  height: $header-height;
+  column-gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__close,
+.nav__toggle,
+.nav__logo {
+  color: $title-color;
+  cursor: pointer;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  font-weight: $font-medium;
+  column-gap: .25rem;
+}
+
+.nav__logo-img {
+  width: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    height: 100%;
+    background-color: $body-color;
+    padding: 4rem 0;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+    transition: .4s ease;
+  }
+}
+
+.show-menu {
+  right: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+
+.nav__link {
+  color: $title-color;
+  font-weight: $font-medium;
+  padding: 0 1.5rem;
+  transition: all .4s ease;
+}
+
+.active-link {
+  color: $first-color;
+}
+
+.nav__close {
+  position: absolute;
+  top: .6rem;
+  right: 1rem;
+}
