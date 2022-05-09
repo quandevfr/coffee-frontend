@@ -1,3 +1,10 @@
+@import 'src/components/globalStyles/style.scss';
+
 .defaultLayout {
   min-width: 320px;
+}
+
+.content {
+  min-height: calc(100vh - 425px);
+  padding-top: 1rem;
 }

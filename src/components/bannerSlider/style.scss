@@ -30,3 +30,9 @@
 .carousel .slick-next {
   right: -10px;
 }
+
+@media screen and (min-width: 992px) {
+  .home__banner-img {
+    height: 250px;
+  }
+}
