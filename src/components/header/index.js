@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 import closeIcon from 'src/assets/icons/ic_close.svg';
 import humbuggerIcon from 'src/assets/icons/ic_humbugger.svg';
 import logoImage from 'src/assets/images/logo.png';
+import LogIn from 'src/layouts/logIn';
 import { itemMenu } from 'src/utils/constants';
 
 import './style.scss';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
 
   const handleToggleClicked = () => {
     setShowMenu(true);
@@ -25,6 +27,10 @@ function Header() {
 
   const handleOverlayClicked = () => {
     setShowMenu(false);
+  };
+
+  const handleLogInClicked = () => {
+    navigate('/login');
   };
 
   return (
@@ -44,6 +50,9 @@ function Header() {
                 </NavLink>
               </li>
             ))}
+            <li className='nav__item nav__login' onClick={handleLogInClicked}>
+              Đăng nhập
+            </li>
           </ul>
 
           <div className='nav__close' id='nav-close' onClick={handleCloseClicked}>
