@@ -2,6 +2,7 @@ import Home from 'src/pages/home';
 import Products from 'src/pages/products';
 import Abouts from 'src/pages/abouts';
 import Contact from 'src/pages/contact/index ';
+import LogIn from 'src/layouts/logIn';
 
 // Public Router
 const publicRoutes = [
@@ -14,12 +15,16 @@ const publicRoutes = [
     component: Products,
   },
   {
-    path: '/abouts',
+    path: '/blog',
     component: Abouts,
   },
   {
     path: '/contact',
     component: Contact,
+  },
+  {
+    path: '/login',
+    component: LogIn,
   },
 ];
 

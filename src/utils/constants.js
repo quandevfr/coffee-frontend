@@ -8,8 +8,8 @@ export const itemMenu = [
     title: 'Sản phẩm',
   },
   {
-    path: '/abouts',
-    title: 'Giới thiệu',
+    path: '/blog',
+    title: 'Blog',
   },
   {
     path: '/contact',

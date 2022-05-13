@@ -48,6 +48,12 @@
   width: 25px;
 }
 
+.nav__login {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
